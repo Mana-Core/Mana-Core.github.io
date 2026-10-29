@@ -1,0 +1,227 @@
+{
+  "generatedAt": "2026-10-29T13:09:05.850Z",
+  "org": "Mana-Core",
+  "repos": [
+    {
+      "slug": "Books",
+      "repo": "Mana-Core/Books",
+      "owner": "Mana-Core",
+      "name": "Mana Books",
+      "description": "Web novel and ebook (EPUB/PDF) sources for the Mana app.",
+      "category": "Books",
+      "branch": "main",
+      "thumbnail": "https://avatars.githubusercontent.com/u/349072547?v=4",
+      "author": {
+        "name": "Mana-Core",
+        "url": "https://github.com/Mana-Core"
+      },
+      "license": "GPL-3.0-or-later",
+      "stars": 0,
+      "updatedAt": "2026-10-29T13:06:35Z",
+      "official": true,
+      "url": "https://github.com/Mana-Core/Books",
+      "installUrl": "https://mana-core.github.io/Books/main",
+      "sources": [
+        {
+          "id": "mc.annas-archive",
+          "name": "AnnasArchive",
+          "version": "1.0.0",
+          "website": "https://annas-archive.gl",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/AnnasArchive.png",
+          "badges": [],
+          "languages": [
+            "en_US",
+            "de_DE",
+            "fr_FR",
+            "es_ES",
+            "it_IT",
+            "pt_BR",
+            "ru_RU",
+            "zh-CN",
+            "ja_JP"
+          ],
+          "developers": [],
+          "path": "src/AnnasArchive"
+        },
+        {
+          "id": "mc.archiveofourown",
+          "name": "ArchiveOfOurOwn",
+          "version": "1.0.0",
+          "website": "https://archiveofourown.org",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/ArchiveOfOurOwn.png",
+          "badges": [],
+          "languages": [
+            "en_US"
+          ],
+          "developers": [],
+          "path": "src/ArchiveOfOurOwn"
+        },
+        {
+          "id": "mc.chikari-novels",
+          "name": "ChikariNovels",
+          "version": "1.0.0",
+          "website": "https://chikari.moe/novels",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/ChikariNovels.png",
+          "badges": [],
+          "languages": [
+            "en_US"
+          ],
+          "developers": [],
+          "path": "src/ChikariNovels"
+        },
+        {
+          "id": "mc.cyrisia",
+          "name": "Cyrisia",
+          "version": "1.0.0",
+          "website": "https://cyrisia.com",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/Cyrisia.png",
+          "badges": [],
+          "languages": [
+            "en_US"
+          ],
+          "developers": [],
+          "path": "src/Cyrisia"
+        },
+        {
+          "id": "mc.gutenberg",
+          "name": "Gutenberg",
+          "version": "1.0.0",
+          "website": "https://www.gutenberg.org",
+          "rating": "safe",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/Gutenberg.png",
+          "badges": [],
+          "languages": [
+            "en_US",
+            "fr_FR",
+            "de_DE",
+            "es_ES",
+            "it_IT",
+            "pt_BR"
+          ],
+          "developers": [],
+          "path": "src/Gutenberg"
+        },
+        {
+          "id": "mc.internetarchive",
+          "name": "InternetArchive",
+          "version": "1.0.0",
+          "website": "https://archive.org",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/InternetArchive.png",
+          "badges": [],
+          "languages": [
+            "en_US",
+            "de_DE",
+            "fr_FR",
+            "es_ES",
+            "it_IT",
+            "pt_BR",
+            "nl_NL",
+            "ru_RU",
+            "pl_PL",
+            "ja_JP",
+            "zh-CN"
+          ],
+          "developers": [],
+          "path": "src/InternetArchive"
+        },
+        {
+          "id": "mc.lnori",
+          "name": "LNori",
+          "version": "1.0.0",
+          "website": "https://lnori.com",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/LNori.png",
+          "badges": [],
+          "languages": [
+            "en_US"
+          ],
+          "developers": [],
+          "path": "src/LNori"
+        },
+        {
+          "id": "mc.novel-archive",
+          "name": "NovelArchive",
+          "version": "1.0.0",
+          "website": "https://novelarchive.cc",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/NovelArchive.png",
+          "badges": [],
+          "languages": [
+            "en_US"
+          ],
+          "developers": [],
+          "path": "src/NovelArchive"
+        },
+        {
+          "id": "mc.novelbuddy",
+          "name": "NovelBuddy",
+          "version": "1.0.0",
+          "website": "https://novelbuddy.me",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/NovelBuddy.png",
+          "badges": [],
+          "languages": [
+            "en_US"
+          ],
+          "developers": [],
+          "path": "src/NovelBuddy"
+        },
+        {
+          "id": "mc.novelfire",
+          "name": "NovelFire",
+          "version": "1.0.0",
+          "website": "https://novelfire.net",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/NovelFire.png",
+          "badges": [],
+          "languages": [
+            "en_US"
+          ],
+          "developers": [],
+          "path": "src/NovelFire"
+        },
+        {
+          "id": "mc.scribblehub",
+          "name": "ScribbleHub",
+          "version": "1.0.0",
+          "website": "https://www.scribblehub.com",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/ScribbleHub.png",
+          "badges": [],
+          "languages": [
+            "en_US"
+          ],
+          "developers": [],
+          "path": "src/ScribbleHub"
+        },
+        {
+          "id": "mc.zlibrary",
+          "name": "ZLibrary",
+          "version": "1.0.0",
+          "website": "https://z-lib.sk",
+          "rating": "mixed",
+          "icon": "https://raw.githubusercontent.com/Mana-Core/Books/main/assets/ZLibrary.png",
+          "badges": [],
+          "languages": [
+            "en_US",
+            "de_DE",
+            "fr_FR",
+            "es_ES",
+            "it_IT",
+            "pt_BR",
+            "ru_RU",
+            "zh-CN",
+            "ja_JP"
+          ],
+          "developers": [],
+          "path": "src/ZLibrary"
+        }
+      ]
+    }
+  ]
+}

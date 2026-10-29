@@ -1,0 +1,180 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="800" viewBox="0 0 800 800" fill="none" role="img" aria-labelledby="title description">
+<title id="title">Mana Core — Refracted Heart</title>
+<desc id="description">A faceted sapphire mana orb with a single luminous cyan mana flame, refracted separately through its crystal faces, white energy ribbons, manga ink outlines, and a soft floating shadow against the original pale lavender background. Refraction is static vector artwork derived from Snell's law at refractive index 1.46.</desc>
+<defs>
+  <radialGradient id="shadow"><stop stop-color="#33295D" stop-opacity=".24"/><stop offset=".48" stop-color="#33295D" stop-opacity=".11"/><stop offset="1" stop-color="#33295D" stop-opacity="0"/></radialGradient>
+  <radialGradient id="halo"><stop stop-color="#28DAFF" stop-opacity=".26"/><stop offset="1" stop-color="#28DAFF" stop-opacity="0"/></radialGradient>
+  <radialGradient id="water"><stop stop-color="#A4FFFF"/><stop offset=".17" stop-color="#42EDEB"/><stop offset=".4" stop-color="#08A1E8"/><stop offset=".7" stop-color="#155AE2"/><stop offset="1" stop-color="#173DBB"/></radialGradient>
+  <radialGradient id="heart"><stop stop-color="#FFFFFF"/><stop offset=".34" stop-color="#E2FFFF"/><stop offset=".57" stop-color="#78FFFF" stop-opacity=".7"/><stop offset="1" stop-color="#78FFFF" stop-opacity="0"/></radialGradient>
+  <radialGradient id="rim"><stop offset=".61" stop-color="#1E54C5" stop-opacity="0"/><stop offset=".9" stop-color="#0A2674" stop-opacity=".15"/><stop offset="1" stop-color="#071C57" stop-opacity=".55"/></radialGradient>
+  <linearGradient id="current" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#21D6FF"/><stop offset=".42" stop-color="#E6FFFF"/><stop offset=".7" stop-color="#76F8FF"/><stop offset="1" stop-color="#11B4FF"/></linearGradient>
+
+<clipPath id="facet-0"><polygon points="-0.232,-222.190 111.212,-192.329 63.291,-109.327"/></clipPath>
+<clipPath id="facet-1"><polygon points="-0.084,-222.277 63.439,-109.415 -0.084,-126.435"/></clipPath>
+<clipPath id="facet-2"><polygon points="-0.084,-126.731 63.439,-109.711 -0.084,0.315"/></clipPath>
+<clipPath id="facet-3"><polygon points="110.894,-192.538 192.477,-110.955 109.475,-63.034"/></clipPath>
+<clipPath id="facet-4"><polygon points="111.066,-192.540 109.647,-63.036 63.145,-109.539"/></clipPath>
+<clipPath id="facet-5"><polygon points="63.293,-109.795 109.795,-63.293 -0.230,0.230"/></clipPath>
+<clipPath id="facet-6"><polygon points="192.306,-111.296 222.167,0.148 126.325,0.148"/></clipPath>
+<clipPath id="facet-7"><polygon points="192.456,-111.212 126.475,0.232 109.454,-63.291"/></clipPath>
+<clipPath id="facet-8"><polygon points="109.711,-63.439 126.731,0.084 -0.315,0.084"/></clipPath>
+<clipPath id="facet-9"><polygon points="222.190,-0.232 192.329,111.212 109.327,63.291"/></clipPath>
+<clipPath id="facet-10"><polygon points="222.277,-0.084 109.415,63.439 126.435,-0.084"/></clipPath>
+<clipPath id="facet-11"><polygon points="126.731,-0.084 109.711,63.439 -0.315,-0.084"/></clipPath>
+<clipPath id="facet-12"><polygon points="192.538,110.894 110.955,192.477 63.034,109.475"/></clipPath>
+<clipPath id="facet-13"><polygon points="192.540,111.066 63.036,109.647 109.539,63.145"/></clipPath>
+<clipPath id="facet-14"><polygon points="109.795,63.293 63.293,109.795 -0.230,-0.230"/></clipPath>
+<clipPath id="facet-15"><polygon points="111.296,192.306 -0.148,222.167 -0.148,126.325"/></clipPath>
+<clipPath id="facet-16"><polygon points="111.212,192.456 -0.232,126.475 63.291,109.454"/></clipPath>
+<clipPath id="facet-17"><polygon points="63.439,109.711 -0.084,126.731 -0.084,-0.315"/></clipPath>
+<clipPath id="facet-18"><polygon points="0.232,222.190 -111.212,192.329 -63.291,109.327"/></clipPath>
+<clipPath id="facet-19"><polygon points="0.084,222.277 -63.439,109.415 0.084,126.435"/></clipPath>
+<clipPath id="facet-20"><polygon points="0.084,126.731 -63.439,109.711 0.084,-0.315"/></clipPath>
+<clipPath id="facet-21"><polygon points="-110.894,192.538 -192.477,110.955 -109.475,63.034"/></clipPath>
+<clipPath id="facet-22"><polygon points="-111.066,192.540 -109.647,63.036 -63.145,109.539"/></clipPath>
+<clipPath id="facet-23"><polygon points="-63.293,109.795 -109.795,63.293 0.230,-0.230"/></clipPath>
+<clipPath id="facet-24"><polygon points="-192.306,111.296 -222.167,-0.148 -126.325,-0.148"/></clipPath>
+<clipPath id="facet-25"><polygon points="-192.456,111.212 -126.475,-0.232 -109.454,63.291"/></clipPath>
+<clipPath id="facet-26"><polygon points="-109.711,63.439 -126.731,-0.084 0.315,-0.084"/></clipPath>
+<clipPath id="facet-27"><polygon points="-222.190,0.232 -192.329,-111.212 -109.327,-63.291"/></clipPath>
+<clipPath id="facet-28"><polygon points="-222.277,0.084 -109.415,-63.439 -126.435,0.084"/></clipPath>
+<clipPath id="facet-29"><polygon points="-126.731,0.084 -109.711,-63.439 0.315,0.084"/></clipPath>
+<clipPath id="facet-30"><polygon points="-192.538,-110.894 -110.955,-192.477 -63.034,-109.475"/></clipPath>
+<clipPath id="facet-31"><polygon points="-192.540,-111.066 -63.036,-109.647 -109.539,-63.145"/></clipPath>
+<clipPath id="facet-32"><polygon points="-109.795,-63.293 -63.293,-109.795 0.230,0.230"/></clipPath>
+<clipPath id="facet-33"><polygon points="-111.296,-192.306 0.148,-222.167 0.148,-126.325"/></clipPath>
+<clipPath id="facet-34"><polygon points="-111.212,-192.456 0.232,-126.475 -63.291,-109.454"/></clipPath>
+<clipPath id="facet-35"><polygon points="-63.439,-109.711 0.084,-126.731 0.084,0.315"/></clipPath>
+<clipPath id="orb"><polygon points="0.000,-222.000 111.000,-192.258 192.258,-111.000 222.000,0.000 192.258,111.000 111.000,192.258 0.000,222.000 -111.000,192.258 -192.258,111.000 -222.000,0.000 -192.258,-111.000 -111.000,-192.258"/></clipPath>
+<g id="vortex">
+<circle r="420" fill="#1741C2"/>
+<circle r="225" fill="url(#water)"/>
+<!-- A single luminous flame: no interior spirals or orbiting rings. -->
+<g transform="scale(.55)">
+<ellipse cx="0" cy="8" rx="72" ry="91" fill="url(#heart)" opacity=".55"/>
+<path d="M-4 79C-43 66-66 38-54 7-47-12-29-21-32-47-19-41-15-27-18-16 7-38 19-66 11-96 57-65 72-19 52 16 47 26 39 32 36 43 36 22 27 10 16 4 22 40 10 65-4 79Z" fill="#66F2F1"/>
+<path d="M-5 64C-29 56-40 39-32 19-26 4-8-7 1-25 15 1 8 18-2 31 12 26 19 18 23 9 34 37 17 59-5 64Z" fill="#EDFFFF"/>
+<path d="M-39-62-34-72-29-62-34-53Z M42-91 47-101 51-92 47-83Z M-58 59-54 51-49 59-54 66Z" fill="#9BFFFF"/>
+</g>
+</g>
+</defs>
+<ellipse cx="402" cy="663" rx="170" ry="36" fill="url(#shadow)"/>
+<circle cx="400" cy="367" r="282" fill="url(#halo)"/>
+<!-- Far-side energy, occluded by the crystal. -->
+<g id="far-mana" fill="url(#current)">
+<path d="M266 173C200 183 148 245 160 287 167 310 200 322 238 322 180 310 165 290 181 258 198 220 231 192 266 173Z"/>
+<path d="M586 289C652 311 671 355 641 397 625 419 600 429 579 433 618 412 631 384 619 353 614 331 601 307 586 289Z"/>
+<path d="M291 570C246 584 225 561 223 531 205 565 237 597 291 570Z"/>
+</g>
+<g id="crystal" transform="translate(400 367)">
+
+<g clip-path="url(#facet-0)"><use xlink:href="#vortex" transform="matrix(0.967478 0.121375 0.121375 0.547023 29.485998 -110.043241)"/></g>
+<polygon points="0.000,-222.000 111.000,-192.258 63.270,-109.587" fill="#A5FFFF" opacity="0.188"/>
+<g clip-path="url(#facet-1)"><use xlink:href="#vortex" transform="matrix(0.967478 0.121375 0.121375 0.547023 29.485998 -110.043241)"/></g>
+<polygon points="0.000,-222.000 63.270,-109.587 0.000,-126.540" fill="#A5FFFF" opacity="0.188"/>
+<g clip-path="url(#facet-2)"><use xlink:href="#vortex" transform="matrix(0.997879 0.007916 0.007916 0.970459 6.627852 -24.735481)"/></g>
+<polygon points="0.000,-126.540 63.270,-109.587 0.000,0.000" fill="#A5FFFF" opacity="0.205"/>
+<g clip-path="url(#facet-3)"><use xlink:href="#vortex" transform="matrix(0.757251 0.242749 0.242749 0.757251 80.557243 -80.557243)"/></g>
+<polygon points="111.000,-192.258 192.258,-111.000 109.587,-63.270" fill="#071C78" opacity="0.060"/>
+<g clip-path="url(#facet-4)"><use xlink:href="#vortex" transform="matrix(0.757251 0.242749 0.242749 0.757251 80.557243 -80.557243)"/></g>
+<polygon points="111.000,-192.258 109.587,-63.270 63.270,-109.587" fill="#071C78" opacity="0.060"/>
+<g clip-path="url(#facet-5)"><use xlink:href="#vortex" transform="matrix(0.984169 0.015831 0.015831 0.984169 18.107628 -18.107628)"/></g>
+<polygon points="63.270,-109.587 109.587,-63.270 0.000,0.000" fill="#A5FFFF" opacity="0.187"/>
+<g clip-path="url(#facet-6)"><use xlink:href="#vortex" transform="matrix(0.547023 0.121375 0.121375 0.967478 110.043241 -29.485998)"/></g>
+<polygon points="192.258,-111.000 222.000,0.000 126.540,0.000" fill="#071C78" opacity="0.060"/>
+<g clip-path="url(#facet-7)"><use xlink:href="#vortex" transform="matrix(0.547023 0.121375 0.121375 0.967478 110.043241 -29.485998)"/></g>
+<polygon points="192.258,-111.000 126.540,0.000 109.587,-63.270" fill="#071C78" opacity="0.060"/>
+<g clip-path="url(#facet-8)"><use xlink:href="#vortex" transform="matrix(0.970459 0.007916 0.007916 0.997879 24.735481 -6.627852)"/></g>
+<polygon points="109.587,-63.270 126.540,0.000 0.000,0.000" fill="#A5FFFF" opacity="0.166"/>
+<g clip-path="url(#facet-9)"><use xlink:href="#vortex" transform="matrix(0.547023 -0.121375 -0.121375 0.967478 110.043241 29.485998)"/></g>
+<polygon points="222.000,0.000 192.258,111.000 109.587,63.270" fill="#071C78" opacity="0.090"/>
+<g clip-path="url(#facet-10)"><use xlink:href="#vortex" transform="matrix(0.547023 -0.121375 -0.121375 0.967478 110.043241 29.485998)"/></g>
+<polygon points="222.000,0.000 109.587,63.270 126.540,0.000" fill="#071C78" opacity="0.090"/>
+<g clip-path="url(#facet-11)"><use xlink:href="#vortex" transform="matrix(0.970459 -0.007916 -0.007916 0.997879 24.735481 6.627852)"/></g>
+<polygon points="126.540,0.000 109.587,63.270 0.000,0.000" fill="#071C78" opacity="0.060"/>
+<g clip-path="url(#facet-12)"><use xlink:href="#vortex" transform="matrix(0.757251 -0.242749 -0.242749 0.757251 80.557243 80.557243)"/></g>
+<polygon points="192.258,111.000 111.000,192.258 63.270,109.587" fill="#071C78" opacity="0.112"/>
+<g clip-path="url(#facet-13)"><use xlink:href="#vortex" transform="matrix(0.757251 -0.242749 -0.242749 0.757251 80.557243 80.557243)"/></g>
+<polygon points="192.258,111.000 63.270,109.587 109.587,63.270" fill="#071C78" opacity="0.112"/>
+<g clip-path="url(#facet-14)"><use xlink:href="#vortex" transform="matrix(0.984169 -0.015831 -0.015831 0.984169 18.107628 18.107628)"/></g>
+<polygon points="109.587,63.270 63.270,109.587 0.000,0.000" fill="#071C78" opacity="0.060"/>
+<g clip-path="url(#facet-15)"><use xlink:href="#vortex" transform="matrix(0.967478 -0.121375 -0.121375 0.547023 29.485998 110.043241)"/></g>
+<polygon points="111.000,192.258 0.000,222.000 0.000,126.540" fill="#071C78" opacity="0.105"/>
+<g clip-path="url(#facet-16)"><use xlink:href="#vortex" transform="matrix(0.967478 -0.121375 -0.121375 0.547023 29.485998 110.043241)"/></g>
+<polygon points="111.000,192.258 0.000,126.540 63.270,109.587" fill="#071C78" opacity="0.105"/>
+<g clip-path="url(#facet-17)"><use xlink:href="#vortex" transform="matrix(0.997879 -0.007916 -0.007916 0.970459 6.627852 24.735481)"/></g>
+<polygon points="63.270,109.587 0.000,126.540 0.000,0.000" fill="#071C78" opacity="0.060"/>
+<g clip-path="url(#facet-18)"><use xlink:href="#vortex" transform="matrix(0.967478 0.121375 0.121375 0.547023 -29.485998 110.043241)"/></g>
+<polygon points="0.000,222.000 -111.000,192.258 -63.270,109.587" fill="#071C78" opacity="0.072"/>
+<g clip-path="url(#facet-19)"><use xlink:href="#vortex" transform="matrix(0.967478 0.121375 0.121375 0.547023 -29.485998 110.043241)"/></g>
+<polygon points="0.000,222.000 -63.270,109.587 0.000,126.540" fill="#071C78" opacity="0.072"/>
+<g clip-path="url(#facet-20)"><use xlink:href="#vortex" transform="matrix(0.997879 0.007916 0.007916 0.970459 -6.627852 24.735481)"/></g>
+<polygon points="0.000,126.540 -63.270,109.587 0.000,0.000" fill="#071C78" opacity="0.060"/>
+<g clip-path="url(#facet-21)"><use xlink:href="#vortex" transform="matrix(0.757251 0.242749 0.242749 0.757251 -80.557243 80.557243)"/></g>
+<polygon points="-111.000,192.258 -192.258,111.000 -109.587,63.270" fill="#071C78" opacity="0.060"/>
+<g clip-path="url(#facet-22)"><use xlink:href="#vortex" transform="matrix(0.757251 0.242749 0.242749 0.757251 -80.557243 80.557243)"/></g>
+<polygon points="-111.000,192.258 -109.587,63.270 -63.270,109.587" fill="#071C78" opacity="0.060"/>
+<g clip-path="url(#facet-23)"><use xlink:href="#vortex" transform="matrix(0.984169 0.015831 0.015831 0.984169 -18.107628 18.107628)"/></g>
+<polygon points="-63.270,109.587 -109.587,63.270 0.000,0.000" fill="#A5FFFF" opacity="0.176"/>
+<g clip-path="url(#facet-24)"><use xlink:href="#vortex" transform="matrix(0.547023 0.121375 0.121375 0.967478 -110.043241 29.485998)"/></g>
+<polygon points="-192.258,111.000 -222.000,0.000 -126.540,0.000" fill="#A5FFFF" opacity="0.160"/>
+<g clip-path="url(#facet-25)"><use xlink:href="#vortex" transform="matrix(0.547023 0.121375 0.121375 0.967478 -110.043241 29.485998)"/></g>
+<polygon points="-192.258,111.000 -126.540,0.000 -109.587,63.270" fill="#A5FFFF" opacity="0.160"/>
+<g clip-path="url(#facet-26)"><use xlink:href="#vortex" transform="matrix(0.970459 0.007916 0.007916 0.997879 -24.735481 6.627852)"/></g>
+<polygon points="-109.587,63.270 -126.540,0.000 0.000,0.000" fill="#A5FFFF" opacity="0.196"/>
+<g clip-path="url(#facet-27)"><use xlink:href="#vortex" transform="matrix(0.547023 -0.121375 -0.121375 0.967478 -110.043241 -29.485998)"/></g>
+<polygon points="-222.000,0.000 -192.258,-111.000 -109.587,-63.270" fill="#A5FFFF" opacity="0.207"/>
+<g clip-path="url(#facet-28)"><use xlink:href="#vortex" transform="matrix(0.547023 -0.121375 -0.121375 0.967478 -110.043241 -29.485998)"/></g>
+<polygon points="-222.000,0.000 -109.587,-63.270 -126.540,0.000" fill="#A5FFFF" opacity="0.207"/>
+<g clip-path="url(#facet-29)"><use xlink:href="#vortex" transform="matrix(0.970459 -0.007916 -0.007916 0.997879 -24.735481 -6.627852)"/></g>
+<polygon points="-126.540,0.000 -109.587,-63.270 0.000,0.000" fill="#A5FFFF" opacity="0.212"/>
+<g clip-path="url(#facet-30)"><use xlink:href="#vortex" transform="matrix(0.757251 -0.242749 -0.242749 0.757251 -80.557243 -80.557243)"/></g>
+<polygon points="-192.258,-111.000 -111.000,-192.258 -63.270,-109.587" fill="#A5FFFF" opacity="0.230"/>
+<g clip-path="url(#facet-31)"><use xlink:href="#vortex" transform="matrix(0.757251 -0.242749 -0.242749 0.757251 -80.557243 -80.557243)"/></g>
+<polygon points="-192.258,-111.000 -63.270,-109.587 -109.587,-63.270" fill="#A5FFFF" opacity="0.230"/>
+<g clip-path="url(#facet-32)"><use xlink:href="#vortex" transform="matrix(0.984169 -0.015831 -0.015831 0.984169 -18.107628 -18.107628)"/></g>
+<polygon points="-109.587,-63.270 -63.270,-109.587 0.000,0.000" fill="#A5FFFF" opacity="0.220"/>
+<g clip-path="url(#facet-33)"><use xlink:href="#vortex" transform="matrix(0.967478 -0.121375 -0.121375 0.547023 -29.485998 -110.043241)"/></g>
+<polygon points="-111.000,-192.258 0.000,-222.000 0.000,-126.540" fill="#A5FFFF" opacity="0.223"/>
+<g clip-path="url(#facet-34)"><use xlink:href="#vortex" transform="matrix(0.967478 -0.121375 -0.121375 0.547023 -29.485998 -110.043241)"/></g>
+<polygon points="-111.000,-192.258 0.000,-126.540 -63.270,-109.587" fill="#A5FFFF" opacity="0.223"/>
+<g clip-path="url(#facet-35)"><use xlink:href="#vortex" transform="matrix(0.997879 -0.007916 -0.007916 0.970459 -6.627852 -24.735481)"/></g>
+<polygon points="-63.270,-109.587 0.000,-126.540 0.000,0.000" fill="#A5FFFF" opacity="0.217"/>
+<g clip-path="url(#orb)">
+<circle r="223" fill="url(#rim)"/>
+<!-- Large, hard-edged reflections describe transparent crystalline surfaces. -->
+<path d="M-222 0-192-111-111-192-145-106-194-22-182 84Z" fill="#63F2FF" opacity=".75"/>
+<path d="M-192-111-111-192 0-222-84-171-137-149Z" fill="#BDFDFF"/>
+<path d="M111-192 192-111 222 0 181-64 166-117Z" fill="#6FDFFF" opacity=".8"/>
+<path d="M222 0 192 111 111 192 143 111 187 36Z" fill="#89F8FF" opacity=".9"/>
+<path d="M-111 192 0 222 111 192 41 192-34 204Z" fill="#2278EC"/>
+<path d="m-181-57 39-72 44-39-41 64Z M151 130l27-55-5 34-31 49Z" fill="#E2FFFF" opacity=".9"/>
+<!-- Broken light-lines reinforce a change of optical direction at a facet edge. -->
+<path d="m-185 65 76 13 26 18m141-216 50-18 57-1M-58-154l-9 46-24 29m152 189 47 24 45-13" stroke="#77EDFF" stroke-width="1.8" opacity=".75"/>
+<path d="m-120-143 18-9 17 4-20 14-17 2Z" fill="#F4FFFF"/>
+</g>
+
+<polygon points="0.000,-222.000 111.000,-192.258 192.258,-111.000 222.000,0.000 192.258,111.000 111.000,192.258 0.000,222.000 -111.000,192.258 -192.258,111.000 -222.000,0.000 -192.258,-111.000 -111.000,-192.258" stroke="#101D3B" stroke-width="5.5" stroke-linejoin="round"/>
+</g>
+<!-- Near-side currents taper to points and retain a white-hot inner edge. -->
+<g id="near-mana">
+<path d="M158 276C164 311 204 320 251 343 280 357 299 379 319 401 283 372 262 364 231 353 184 337 149 318 158 276Z" fill="url(#current)"/>
+<path d="M163 297C188 325 258 331 294 376 254 347 188 337 163 297Z" fill="#E5FFFF"/>
+<path d="M640 392C663 429 603 469 533 482 478 492 449 511 430 540 440 512 467 489 518 477 590 459 635 431 640 392Z" fill="url(#current)"/>
+<path d="M643 410C636 446 571 469 518 481 478 491 460 507 446 518 461 496 480 484 518 474 573 461 626 441 643 410Z" fill="#EDFFFF"/>
+<path d="M511 573C565 571 595 545 580 523 615 548 573 585 511 573Z" fill="#6EF6FF"/>
+<path d="M539 576C570 567 587 552 587 538 600 551 580 571 539 576Z" fill="#F0FFFF"/>
+</g>
+<!-- A small number of crystalline motes keeps the silhouette readable. -->
+<g id="motes" stroke="#0D2D55" stroke-width="1.5" stroke-linejoin="round">
+<path d="m272 151 18-12-7 20-14 6Z" fill="#B8FFFF"/>
+<path d="m619 238 14 7 7 18-17-9Z" fill="#B8FFFF"/>
+<path d="m171 379 7 14-5 9-9-17Z" fill="#4BE6FF"/>
+<path d="m611 526 12-9-3 15-12 6Z" fill="#83FFFF"/>
+<path d="m250 591 9 3 2 10-12-5Z" fill="#B8FFFF"/>
+</g>
+<g fill="#81F6FF">
+<circle cx="663" cy="290" r="3"/><circle cx="653" cy="494" r="2.5"/><circle cx="216" cy="548" r="3"/>
+</g>
+<path d="m570 184 3 9 9 3-9 3-3 9-3-9-9-3 9-3Z" fill="#DDFFFF"/>
+</svg>

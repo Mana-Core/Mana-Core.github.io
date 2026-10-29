@@ -1,0 +1,13 @@
+{
+  "$comment": "Only Mana-Core repos with the 'mana-extension' topic are listed; they're discovered automatically. Add an entry under 'repos' only to override settings (branch, category, installUrl, sourcesDir, exclude) for one of them.",
+  "org": "Mana-Core",
+  "topic": "mana-extension",
+  "repos": [
+    {
+      "repo": "Mana-Core/Books",
+      "category": "Books",
+      "sourcesDir": "src",
+      "exclude": ["lib"]
+    }
+  ]
+}

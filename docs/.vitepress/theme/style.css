@@ -1,0 +1,492 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fredoka:wght@600;700&display=swap');
+
+/* ---------------------------------------------------------------------------
+   Palette — violet-tinted ink neutrals; the accent comes from --mc-accent-*,
+   set by settings.ts (and the pre-paint script in config.mts).
+   ------------------------------------------------------------------------ */
+:root {
+  --mc-accent-1: oklch(0.74 0.15 280);
+  --mc-accent-2: oklch(0.62 0.18 280);
+  --mc-accent-3: oklch(0.40 0.12 280);
+
+  --vp-font-family-base: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+  --mc-font-display: 'Fredoka', 'Inter', ui-rounded, system-ui, sans-serif;
+
+  --vp-c-bg: #fbfaff;
+  --vp-c-bg-alt: #f1eff7;
+  --vp-c-bg-elv: #f6f4fb;
+  --vp-c-bg-soft: #f1eff7;
+  --vp-c-border: #c6c3d1;
+  --vp-c-divider: #e3e0ec;
+  --vp-c-gutter: #e4e1ec;
+  --vp-c-text-1: #1a1924;
+  --vp-c-text-2: #4a4657;
+  --vp-c-text-3: #79758a;
+
+  --vp-c-brand-1: color-mix(in srgb, var(--mc-accent-2) 70%, black);
+  --vp-c-brand-2: color-mix(in srgb, var(--mc-accent-2) 85%, black);
+  --vp-c-brand-3: var(--mc-accent-2);
+  --vp-c-brand-soft: color-mix(in srgb, var(--mc-accent-2) 16%, transparent);
+  --mc-card-border: #dedbe8;
+  --mc-card-bg: var(--vp-c-bg);
+  --mc-tile-bg: var(--vp-c-bg-soft);
+
+  --vp-button-brand-text: #fff;
+  --vp-button-brand-hover-text: #fff;
+  --vp-button-brand-active-text: #fff;
+
+  --vp-sidebar-width: 280px;
+  --vp-nav-logo-height: 30px;
+}
+
+.dark {
+  --vp-c-bg: #100f17;
+  --vp-c-bg-alt: #0b0a11;
+  --vp-c-bg-elv: #1a1924;
+  --vp-c-bg-soft: #1a1924;
+  --vp-c-border: #363341;
+  --vp-c-divider: #24222e;
+  --vp-c-gutter: #000;
+  --vp-c-text-1: #ece9f5;
+  --vp-c-text-2: #aba7b9;
+  --vp-c-text-3: #827e91;
+
+  --vp-c-brand-1: var(--mc-accent-1);
+  --vp-c-brand-2: var(--mc-accent-2);
+  --vp-c-brand-3: var(--mc-accent-3);
+  --vp-c-brand-soft: color-mix(in srgb, var(--mc-accent-2) 20%, transparent);
+  --mc-card-border: #2d2a39;
+  --mc-card-bg: #15141d;
+  --mc-tile-bg: #221f2d;
+
+  --vp-button-brand-text: #0b0a11;
+  --vp-button-brand-hover-text: #0b0a11;
+  --vp-button-brand-active-text: #0b0a11;
+}
+
+/* Brand buttons use the bright accent on dark, deep accent on light. */
+:root {
+  --vp-button-brand-bg: var(--vp-c-brand-2);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-1);
+  --vp-button-brand-active-bg: var(--vp-c-brand-1);
+  --vp-button-brand-border: transparent;
+}
+.dark {
+  --vp-button-brand-bg: var(--vp-c-brand-1);
+  --vp-button-brand-hover-bg: var(--vp-c-brand-2);
+}
+
+/* Callouts follow the accent. */
+:root {
+  --vp-c-tip-1: var(--vp-c-brand-1);
+  --vp-c-tip-2: var(--vp-c-brand-2);
+  --vp-c-tip-3: var(--vp-c-brand-3);
+  --vp-c-tip-soft: var(--vp-c-brand-soft);
+  --vp-c-note-1: var(--vp-c-brand-1);
+  --vp-c-note-soft: var(--vp-c-brand-soft);
+}
+
+/* Accent Background setting */
+html.accent-bg {
+  --vp-c-bg: color-mix(in srgb, var(--mc-accent-2) 5%, #fbfaff);
+  --vp-c-bg-alt: color-mix(in srgb, var(--mc-accent-2) 8%, #f1eff7);
+  --vp-c-bg-soft: color-mix(in srgb, var(--mc-accent-2) 8%, #f1eff7);
+  --mc-card-bg: color-mix(in srgb, var(--mc-accent-2) 4%, #fff);
+}
+html.dark.accent-bg {
+  --vp-c-bg: color-mix(in srgb, var(--mc-accent-3) 22%, #100f17);
+  --vp-c-bg-alt: color-mix(in srgb, var(--mc-accent-3) 18%, #0b0a11);
+  --vp-c-bg-elv: color-mix(in srgb, var(--mc-accent-3) 22%, #1a1924);
+  --vp-c-bg-soft: color-mix(in srgb, var(--mc-accent-3) 22%, #1a1924);
+  --mc-card-bg: color-mix(in srgb, var(--mc-accent-3) 18%, #15141d);
+  --mc-tile-bg: color-mix(in srgb, var(--mc-accent-3) 30%, #221f2d);
+  --mc-card-border: color-mix(in srgb, var(--mc-accent-3) 45%, #2d2a39);
+  --vp-c-divider: color-mix(in srgb, var(--mc-accent-3) 40%, #24222e);
+}
+
+html.effects-disabled *,
+html.effects-disabled *::before,
+html.effects-disabled *::after {
+  transition: none !important;
+  animation: none !important;
+}
+
+html.icons-hidden .mc-src-icon { display: none !important; }
+html.nsfw-hidden .is-nsfw { display: none !important; }
+
+::selection { background: color-mix(in srgb, var(--mc-accent-2) 35%, transparent); }
+
+/* ---------------------------------------------------------------------------
+   Nav — logo left, icon buttons grouped in a pill on the right
+   ------------------------------------------------------------------------ */
+.VPNavBar .title { font-weight: 700; font-size: 17px; gap: 4px; }
+.VPNavBar.has-sidebar .content-body,
+.VPNavBar .content-body { background: transparent !important; }
+.VPNavBar:not(.home) .divider-line,
+.VPNavBar .divider { display: none; }
+
+@media (min-width: 768px) {
+  .VPNavBar .content { display: flex; justify-content: flex-end; }
+  .VPNavBar .content-body {
+    flex-grow: 0 !important;
+    align-self: center;
+    height: 42px !important;
+    padding: 0 6px;
+    gap: 0;
+    border: 1px solid var(--vp-c-divider);
+    border-radius: 999px;
+    background: color-mix(in srgb, var(--vp-c-bg-alt) 70%, transparent) !important;
+  }
+  .VPNavBarSearch { flex-grow: 0 !important; padding-left: 0 !important; }
+  .VPNavBarAppearance,
+  .VPNavBarSocialLinks,
+  .VPNavBarExtra { margin: 0 !important; }
+  .VPNavBarAppearance::before,
+  .VPNavBarSocialLinks::before,
+  .VPNavBarExtra::before { display: none !important; }
+}
+
+.VPNavBarSearch .DocSearch-Button,
+.VPLocalSearchBox ~ * .DocSearch-Button { background: transparent; }
+@media (min-width: 768px) {
+  .VPNavBarSearch .DocSearch-Button {
+    width: 36px;
+    padding: 0;
+    justify-content: center;
+    background: transparent;
+  }
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Placeholder,
+  .VPNavBarSearch .DocSearch-Button .DocSearch-Button-Keys { display: none; }
+  .VPNavBarSearch .DocSearch-Search-Icon { width: 16px; height: 16px; }
+}
+
+.VPNavBarSocialLinks .VPSocialLink,
+.VPNavBarAppearance .VPSwitchAppearance { color: var(--vp-c-text-2); }
+.VPSocialLink:hover { color: var(--vp-c-brand-1) !important; }
+
+/* ---------------------------------------------------------------------------
+   Sidebar — darker rail, icon items, soft accent highlight
+   ------------------------------------------------------------------------ */
+.VPSidebar { background: var(--vp-c-bg-alt) !important; }
+@media (min-width: 960px) {
+  .VPSidebar { padding-top: var(--vp-nav-height) !important; }
+}
+
+.VPSidebarItem .text { display: inline-flex; align-items: center; gap: 8px; font-weight: 500; }
+.VPSidebarItem .text .mc-icon { font-size: 15px; opacity: .85; }
+.VPSidebarItem.level-0 > .item > .text,
+.VPSidebarItem.level-0 > .item > .link > .text { font-weight: 600; color: var(--vp-c-text-1); }
+
+.VPSidebarItem.level-1 .item,
+.VPSidebarItem.level-0.is-link > .item {
+  border-radius: 8px;
+  padding-left: 8px !important;
+  margin-left: -8px;
+  transition: background-color .2s;
+}
+.VPSidebarItem .item:hover { background: color-mix(in srgb, var(--vp-c-text-1) 5%, transparent); }
+.VPSidebarItem.is-active > .item {
+  background: color-mix(in srgb, var(--mc-accent-2) 15%, transparent);
+}
+.VPSidebarItem.is-active > .item .indicator { display: none; }
+
+.VPSidebar .group + .group { border-top: 1px solid var(--vp-c-divider) !important; }
+
+/* ---------------------------------------------------------------------------
+   Content
+   ------------------------------------------------------------------------ */
+.vp-doc h1 { font-weight: 700; letter-spacing: -0.02em; }
+.vp-doc h2 { border-top-color: var(--vp-c-divider); letter-spacing: -0.01em; }
+.vp-doc a { text-underline-offset: 3px; }
+.vp-doc .custom-block { border-radius: 10px; }
+.vp-doc div[class*='language-'] { border-radius: 10px !important; border: 1px solid var(--vp-c-divider); }
+.dark .vp-doc div[class*='language-'] { background-color: #0b0a11; }
+
+.VPDocAsideOutline .outline-title { display: inline-flex; gap: 6px; align-items: center; }
+.VPDocAsideOutline .outline-link.active { color: var(--vp-c-brand-1); }
+
+/* ---------------------------------------------------------------------------
+   Shared components
+   ------------------------------------------------------------------------ */
+.mc-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--mc-card-border);
+  border-radius: 12px;
+  background: var(--mc-card-bg);
+  color: inherit;
+  text-decoration: none !important;
+  transition: border-color .25s, transform .25s, box-shadow .25s, background-color .25s;
+}
+a.mc-card:hover,
+.mc-card.is-link:hover {
+  border-color: color-mix(in srgb, var(--mc-accent-1) 60%, var(--mc-card-border));
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px -12px color-mix(in srgb, var(--mc-accent-2) 45%, transparent);
+}
+
+.mc-tile {
+  display: inline-grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 8px;
+  background: var(--mc-tile-bg);
+  color: var(--vp-c-text-1);
+  font-size: 18px;
+  flex: none;
+}
+
+.mc-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 1px 8px;
+  border-radius: 999px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-2);
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 18px;
+  white-space: nowrap;
+}
+.mc-chip.safe { color: var(--vp-c-green-1); border-color: var(--vp-c-green-soft); background: var(--vp-c-green-soft); }
+.mc-chip.mixed { color: var(--vp-c-yellow-1); border-color: var(--vp-c-yellow-soft); background: var(--vp-c-yellow-soft); }
+.mc-chip.nsfw { color: var(--vp-c-red-1); border-color: var(--vp-c-red-soft); background: var(--vp-c-red-soft); }
+.mc-chip.accent { color: var(--vp-c-brand-1); border-color: var(--vp-c-brand-soft); background: var(--vp-c-brand-soft); }
+
+.mc-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 34px;
+  padding: 0 14px;
+  border-radius: 8px;
+  border: 1px solid var(--vp-c-divider);
+  background: var(--vp-c-bg-soft);
+  color: var(--vp-c-text-1) !important;
+  font-size: 13.5px;
+  font-weight: 600;
+  text-decoration: none !important;
+  cursor: pointer;
+  transition: border-color .2s, background-color .2s, color .2s;
+  white-space: nowrap;
+}
+.mc-btn:hover { border-color: var(--vp-c-brand-1); color: var(--vp-c-brand-1) !important; }
+.mc-btn.brand {
+  border-color: transparent;
+  background: var(--vp-button-brand-bg);
+  color: var(--vp-button-brand-text) !important;
+}
+.mc-btn.brand:hover { background: var(--vp-button-brand-hover-bg); color: var(--vp-button-brand-text) !important; }
+
+.mc-input {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--mc-card-border);
+  border-radius: 10px;
+  background: var(--mc-card-bg);
+  color: var(--vp-c-text-3);
+  transition: border-color .2s;
+}
+.mc-input:focus-within { border-color: var(--vp-c-brand-1); }
+.mc-input input {
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  color: var(--vp-c-text-1);
+  font-size: 14px;
+}
+.mc-input kbd {
+  font: 500 11px var(--vp-font-family-mono);
+  padding: 1px 6px;
+  border-radius: 4px;
+  border: 1px solid var(--vp-c-divider);
+  color: var(--vp-c-text-3);
+}
+
+.mc-filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.mc-filter {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 30px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--mc-card-border);
+  background: transparent;
+  color: var(--vp-c-text-2);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all .2s;
+}
+.mc-filter:hover { color: var(--vp-c-text-1); border-color: var(--vp-c-text-3); }
+.mc-filter.on {
+  color: var(--vp-c-brand-1);
+  border-color: color-mix(in srgb, var(--vp-c-brand-1) 50%, transparent);
+  background: var(--vp-c-brand-soft);
+}
+.mc-filter .count { font-size: 11px; color: var(--vp-c-text-3); }
+
+.mc-empty {
+  padding: 40px 16px;
+  border: 1px dashed var(--mc-card-border);
+  border-radius: 12px;
+  text-align: center;
+  color: var(--vp-c-text-3);
+}
+
+/* Settings panel ---------------------------------------------------------- */
+.mc-settings { position: relative; display: flex; align-items: center; }
+.mc-settings-btn {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 999px;
+  color: var(--vp-c-text-2);
+  font-size: 17px;
+  transition: color .2s;
+}
+.mc-settings-btn:hover,
+.mc-settings-btn.active { color: var(--vp-c-brand-1); }
+
+.mc-settings-panel {
+  position: absolute;
+  top: calc(100% + 10px);
+  right: -8px;
+  z-index: 100;
+  width: 264px;
+  padding: 14px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 12px;
+  background: var(--vp-c-bg-elv);
+  box-shadow: var(--vp-shadow-3);
+  display: grid;
+  gap: 10px;
+}
+.mc-sheet-section { display: grid; gap: 2px; }
+.mc-sheet-section + .mc-sheet-section { padding-top: 10px; border-top: 1px solid var(--vp-c-divider); }
+.mc-sheet-section h3 {
+  margin: 0 0 6px;
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  color: var(--vp-c-text-3);
+}
+
+.mc-chips { display: flex; flex-wrap: wrap; gap: 5px; margin-bottom: 6px; }
+.mc-chip-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  height: 26px;
+  padding: 0 10px 0 5px;
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 999px;
+  font-size: 12.5px;
+  font-weight: 500;
+  color: var(--vp-c-text-2);
+  transition: border-color .15s, color .15s, background-color .15s;
+}
+.mc-chip-btn b { width: 15px; height: 15px; border-radius: 50%; }
+.mc-chip-btn:hover { color: var(--vp-c-text-1); border-color: var(--vp-c-text-3); }
+.mc-chip-btn.on { color: var(--vp-c-text-1); border-color: var(--vp-c-text-1); background: var(--vp-c-bg-soft); }
+.mc-chip-btn.more { padding: 0 10px; color: var(--vp-c-text-3); }
+
+.mc-switch-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  min-height: 34px;
+  font-size: 13.5px;
+  color: var(--vp-c-text-1);
+  cursor: pointer;
+}
+.mc-switch {
+  appearance: none;
+  position: relative;
+  flex: none;
+  width: 34px;
+  height: 20px;
+  margin: 0;
+  border-radius: 999px;
+  background: var(--vp-c-default-3);
+  cursor: pointer;
+  transition: background-color .2s;
+}
+.dark .mc-switch { background: var(--vp-c-gray-2); }
+.mc-switch::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgb(0 0 0 / .25);
+  transition: transform .2s;
+}
+.mc-switch:checked { background: var(--vp-c-brand-2); }
+.dark .mc-switch:checked { background: var(--vp-c-brand-1); }
+.mc-switch:checked::after { transform: translateX(14px); }
+.mc-switch:focus-visible { outline: 2px solid var(--vp-c-brand-1); outline-offset: 2px; }
+
+.mc-reset {
+  justify-self: start;
+  padding: 0;
+  font-size: 12.5px;
+  color: var(--vp-c-text-3);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.mc-reset:hover { color: var(--vp-c-brand-1); }
+
+.mc-pop-enter-active, .mc-pop-leave-active { transition: opacity .15s, transform .15s; }
+.mc-pop-enter-from, .mc-pop-leave-to { opacity: 0; transform: translateY(-4px); }
+
+/* Home ------------------------------------------------------------------- */
+.VPHome { padding-bottom: 48px !important; }
+.VPHome .vp-doc { padding: 0 24px; }
+@media (min-width: 640px) { .VPHome .vp-doc { padding: 0 48px; } }
+@media (min-width: 960px) { .VPHome .vp-doc { padding: 0 64px; } }
+.VPHome .vp-doc > div { max-width: 1152px; margin: 0 auto; }
+
+.VPFooter { border-top: 1px solid var(--vp-c-divider) !important; background: var(--vp-c-bg-alt) !important; }
+
+.VPNavBarTitle .logo { height: 36px !important; width: 36px !important; }
+
+.mc-count {
+  margin-left: auto;
+  padding: 0 7px;
+  border-radius: 999px;
+  background: var(--vp-c-bg-soft);
+  border: 1px solid var(--vp-c-divider);
+  font-size: 11px;
+  line-height: 18px;
+  color: var(--vp-c-text-3);
+}
+.VPSidebarItem .text:has(.mc-count) { display: flex; width: 100%; }
+
+/* Toolbar: our ThemeToggle replaces VitePress's sliding switch on desktop;
+   every icon button is 36px with an 18px glyph. */
+.VPNavBarAppearance { display: none !important; }
+.mc-nav-theme { display: none; }
+@media (min-width: 768px) { .mc-nav-theme { display: grid; } }
+@media (min-width: 768px) {
+  .VPNavBarSearch .DocSearch-Search-Icon { width: 18px !important; height: 18px !important; }
+  .VPNavBarSocialLinks .VPSocialLink { width: 36px; height: 36px; }
+  .VPNavBarSocialLinks .VPSocialLink > span { width: 18px; height: 18px; }
+  .mc-settings-btn { font-size: 18px; }
+}
