@@ -1,11 +1,11 @@
 ---
 title: Installing extensions
-description: Add a Mana Core repository to the Mana app.
+description: Add a 3rd Party extension repository to the Mana app.
 ---
 
 # Installing extensions
 
-Mana loads sources from a URL you add once; after that, the source and any others published alongside it are available to install, and updates arrive automatically.
+Mana loads 3rd Party sources from a URL you add once; after that, the source and any others published alongside it are available to install, and updates arrive automatically.
 
 ## 1. Find a source
 

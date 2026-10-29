@@ -26,7 +26,7 @@ const groups = [
   {
     title: 'Browse',
     links: [
-      { icon: 'package', title: 'Source Index', text: 'Every community source, with install links', link: '/extensions/' },
+      { icon: 'package', title: 'Source Index', text: 'Every 3rd Party source, with install links', link: '/extensions/' },
       { icon: 'rocket', title: 'Getting Started', text: 'Add a source to Mana in under a minute', link: '/guide/installing' }
     ]
   },
@@ -48,8 +48,8 @@ const isExternal = (link: string) => /^https?:/.test(link)
       <div class="glow" aria-hidden="true" />
       <h1 class="title"><ManaTitle /></h1>
       <p class="tagline">
-        <template v-if="totalSources">Browse {{ totalSources }} community sources for Mana</template>
-        <template v-else>Community sources for Mana, coming soon</template>
+        <template v-if="totalSources">Browse {{ totalSources }} 3rd Party sources for Mana</template>
+        <template v-else>3rd Party sources for Mana, coming soon</template>
       </p>
 
       <form class="search" role="search" @submit.prevent="search">
@@ -204,10 +204,12 @@ const isExternal = (link: string) => /^https?:/.test(link)
 .track { display: flex; gap: 10px; width: max-content; animation: mc-scroll 40s linear infinite; }
 @keyframes mc-scroll { to { transform: translateX(-50%); } }
 
+/* Columns hug their links and the pair is centered, so it lines up under the hero. */
 .groups {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 32px;
+  grid-template-columns: repeat(2, minmax(0, 360px));
+  justify-content: center;
+  gap: 32px 96px;
 }
 @media (max-width: 860px) { .groups { grid-template-columns: 1fr; gap: 24px; } }
 .group { display: grid; align-content: start; gap: 2px; }

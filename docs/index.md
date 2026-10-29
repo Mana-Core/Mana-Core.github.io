@@ -1,6 +1,7 @@
 ---
 layout: home
-title: Home
+title: Mana Core
+titleTemplate: false
 footer: false
 ---
 

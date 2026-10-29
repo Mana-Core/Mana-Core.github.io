@@ -9,8 +9,9 @@ const data = JSON.parse(readFileSync(new URL('./data/extensions.json', import.me
 // GitHub Pages serves project sites from /<repo>/. The deploy workflow sets
 // DOCS_BASE; Mana-Core.github.io (an org site) uses the default '/'.
 const base = process.env.DOCS_BASE ?? '/'
+// Link embeds (Discord, Slack, X) only fetch absolute image URLs.
+const siteUrl = `https://mana-core.github.io${base}`
 
-// Repo pages still exist (for install URLs) but are unlisted; only sources show.
 const totalSources = data.repos.reduce((n, r) => n + r.sources.length, 0)
 
 const icon = (name: string, text: string) => `<span class="mc-icon i-${name}"></span>${text}`
@@ -54,24 +55,29 @@ export default defineConfig({
   lang: 'en-US',
   title: 'Mana Core',
   titleTemplate: ':title • Mana Core',
-  description: 'Community-maintained extensions for the Mana app.',
+  description: '3rd Party extensions for the Mana app.',
   cleanUrls: true,
   lastUpdated: true,
   appearance: 'dark',
   head: [
     ['link', { rel: 'icon', type: 'image/svg+xml', href: `${base}logo.svg` }],
     ['meta', { name: 'theme-color', content: '#100f17' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:site_name', content: 'Mana Core' }],
+    ['meta', { property: 'og:url', content: siteUrl }],
     ['meta', { property: 'og:title', content: 'Mana Core' }],
-    ['meta', { property: 'og:description', content: 'Community-maintained extensions for the Mana app.' }],
+    ['meta', { property: 'og:description', content: '3rd Party extensions for the Mana app.' }],
+    // Both images are rendered from og-image.svg, since embeds don't display SVG. The GIF
+    // animates where supported (Discord); the PNG still goes to X, which doesn't animate cards.
+    ['meta', { property: 'og:image', content: `${siteUrl}og-image.gif` }],
+    ['meta', { property: 'og:image:type', content: 'image/gif' }],
+    ['meta', { property: 'og:image:width', content: '1200' }],
+    ['meta', { property: 'og:image:height', content: '630' }],
+    ['meta', { property: 'og:image:alt', content: 'Mana Core: 3rd Party sources for Mana' }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: `${siteUrl}og-image.png` }],
     ['script', {}, prePaint]
   ],
-  transformPageData(page) {
-    // Dynamic repo pages take their title from the route params.
-    if (page.params?.title) {
-      page.title = page.params.title
-      page.description = page.params.description
-    }
-  },
   themeConfig: {
     logo: '/logo.svg',
     siteTitle: 'Mana Core',
@@ -81,7 +87,7 @@ export default defineConfig({
     search: { provider: 'local' },
     socialLinks: [{ icon: 'github', link: 'https://github.com/Mana-Core' }],
     footer: {
-      message: 'Extensions are made and maintained by the community. Mana Core does not host any content.',
+      message: 'Extensions are made and maintained by 3rd parties. Mana Core does not host any content.',
       copyright: 'Mana Core'
     },
     docFooter: { prev: 'Previous', next: 'Next' }

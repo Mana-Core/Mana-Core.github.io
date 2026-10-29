@@ -61,7 +61,7 @@ function host(url?: string) {
 
 <template>
   <div v-if="!items.length" class="mc-empty">
-    No sources yet. Sources from Mana Core repositories show up here automatically once they're published.
+    No sources yet. 3rd Party sources from Mana Core repositories show up here automatically once they're published.
   </div>
   <div v-else class="mc-sources">
     <div class="toolbar">

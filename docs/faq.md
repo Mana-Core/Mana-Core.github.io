@@ -7,11 +7,11 @@ description: Frequently asked questions about Mana Core.
 
 ## What is Mana Core?
 
-A GitHub organization and index for community-made **Mana** extensions. It lists extension repositories, documents how to build them, and gives abandoned repositories a home where others can keep them working.
+A GitHub organization and index for 3rd Party **Mana** extensions. It lists extension repositories, documents how to build them, and gives abandoned repositories a home where others can keep them working.
 
 ## Is Mana Core part of Mana?
 
-No. Mana Core is community-run. Issues with the app itself belong with the Mana developers; issues with a source belong in that source's repository.
+No. Mana Core is 3rd Party-run. Issues with the app itself belong with the Mana developers; issues with a source belong in that source's repository.
 
 ## A source stopped working. What now?
 
