@@ -195,8 +195,9 @@ async function readRepo(entry) {
 async function discovered() {
   try {
     const repos = await gh(`orgs/${registry.org}/repos?per_page=100`)
+    const skip = new Set((registry.exclude ?? []).map(name => `${registry.org}/${name}`.toLowerCase()))
     return repos
-      .filter(r => !r.archived && r.topics?.includes(registry.topic))
+      .filter(r => !r.archived && !skip.has(r.full_name.toLowerCase()))
       .map(r => ({ repo: r.full_name }))
   } catch (e) {
     console.warn(`  org discovery skipped: ${e.message}`)

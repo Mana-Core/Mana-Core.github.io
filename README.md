@@ -14,8 +14,8 @@ npm run dev       # http://localhost:5173
 
 ## Listing extension repositories
 
-- **Org repos**: any repo in `Mana-Core` with the `mana-extension` topic is picked up automatically.
-- **Other repos**: add an entry to [`registry.json`](registry.json) (`repo`, optional `branch`, `category`, `installUrl`, `sourcesDir`, `exclude`, `name`, `description`, `slug`). `exclude` lists folders under `sourcesDir` that aren't sources, such as a shared `lib`.
+- **Org repos**: every non-archived repo in `Mana-Core` is picked up automatically, except the docs repo and anything listed under `exclude` in [`registry.json`](registry.json).
+- **Overrides**: add an entry under `repos` in [`registry.json`](registry.json) to change one repo's settings (`repo`, optional `branch`, `category`, `installUrl`, `sourcesDir`, `exclude`, `name`, `description`, `slug`). Here `exclude` lists folders under `sourcesDir` that aren't sources, such as a shared `lib`.
 
 Source metadata is parsed statically from each `SourceInfo` object in `src/sources/<Name>/`; nothing from extension repos is executed.
 

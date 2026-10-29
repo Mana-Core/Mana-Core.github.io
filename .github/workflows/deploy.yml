@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
   schedule:
-    - cron: '0 4 * * *' # refresh the extension index daily
+    - cron: '0 4 * * *'
   workflow_dispatch:
   repository_dispatch:
     types: [extensions-updated]
@@ -36,7 +36,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # Org sites (<org>.github.io) live at '/', project sites at '/<repo>/'.
       - name: Build
         run: |
           name="${GITHUB_REPOSITORY#*/}"
