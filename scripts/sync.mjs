@@ -187,7 +187,7 @@ async function readRepo(entry) {
     updatedAt: meta.pushed_at,
     official: owner.toLowerCase() === registry.org.toLowerCase(),
     url: meta.html_url,
-    installUrl: entry.installUrl ?? `https://${owner.toLowerCase()}.github.io/${name}/${branch}`,
+    installUrl: entry.installUrl ?? `https://${owner.toLowerCase()}.github.io/${name}`,
     sources
   }
 }
