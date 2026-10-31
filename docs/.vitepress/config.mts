@@ -20,7 +20,8 @@ const sidebar: DefaultTheme.SidebarItem[] = [
   {
     items: [
       { text: icon('home', 'Home'), link: '/' },
-      { text: `${icon('package', 'Source Index')}${totalSources ? ` <span class="mc-count">${totalSources}</span>` : ''}`, link: '/extensions/' }
+      { text: `${icon('package', 'Source Index')}${totalSources ? ` <span class="mc-count">${totalSources}</span>` : ''}`, link: '/extensions/' },
+      { text: icon('palette', 'Themes'), link: '/themes/' }
     ]
   },
   {

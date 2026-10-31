@@ -23,6 +23,10 @@ If Mana doesn't open, update it to the latest version. You can also add the whol
 Menu labels can change between Mana releases. If you can't find the option, check the release notes of your Mana version.
 :::
 
+## Adding a theme
+
+Open [Themes](/themes/) and press **Add to Mana** on the one you want. Theme links need Mana Build 55 or later.
+
 ## Content ratings
 
 Every source declares a rating, shown as a badge on its card:

@@ -1,4 +1,6 @@
+import { withBase } from 'vitepress'
 import raw from '../data/extensions.json'
+import type { ManaTheme } from './themes.data'
 
 export type Rating = 'safe' | 'mixed' | 'nsfw' | 'unknown'
 
@@ -45,6 +47,15 @@ export function addRepoLink(repo: Repo) {
 // Mana shows the source and asks before installing it.
 export function installLink(source: Source, repo: Repo) {
   return `mana://install-source?repo=${encodeURIComponent(repo.installUrl)}&id=${encodeURIComponent(source.id)}`
+}
+
+export function themeFile(theme: ManaTheme) {
+  return withBase(`/themes/${theme.slug}.json`)
+}
+
+// Mana loads the hosted file, so the URL must be absolute even where the page link isn't.
+export function addThemeLink(theme: ManaTheme) {
+  return `mana://add-theme?url=${encodeURIComponent(`https://mana-core.github.io${themeFile(theme)}`)}`
 }
 
 export const ratingLabel: Record<Rating, string> = {

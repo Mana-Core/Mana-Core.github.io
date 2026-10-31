@@ -27,6 +27,7 @@ const groups = [
     title: 'Browse',
     links: [
       { icon: 'package', title: 'Source Index', text: 'Every 3rd Party source, with install links', link: '/extensions/' },
+      { icon: 'palette', title: 'Themes', text: 'Color themes you can add to Mana', link: '/themes/' },
       { icon: 'rocket', title: 'Getting Started', text: 'Add a source to Mana in under a minute', link: '/guide/installing' }
     ]
   },
