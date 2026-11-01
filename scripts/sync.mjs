@@ -5,7 +5,7 @@
 // `info: SourceInfo = {...}` object), so nothing from the extension repos is
 // executed. Set GITHUB_TOKEN to avoid the 60 req/h anonymous API limit.
 //
-// Also builds docs/.vitepress/data/themes.json from the themes repo's index.
+// Also builds docs/.vitepress/data/themes.json from the themes site's index.
 
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
@@ -233,21 +233,23 @@ console.log(`Wrote ${outFile}`)
 
 // --- Themes -----------------------------------------------------------------
 
-// The themes repo hosts its own files, so the site only needs their colors for the previews.
+// The themes site hosts its own files, so this one only needs their colors for the previews.
 // Unlike a repo above, a failure here stops the deploy: the last good site stays up instead
 // of being replaced by one with an empty Themes page.
-const { repo: themesRepo } = registry.themes
-const { default_branch: themesBranch } = await gh(`repos/${themesRepo}`)
-const themesIndex = await raw(themesRepo, themesBranch, 'themes.json')
-if (themesIndex === null) throw new Error(`Could not download themes.json from ${themesRepo}`)
+async function hosted(url) {
+  const res = await fetch(url)
+  if (!res.ok) throw new Error(`Could not download ${url} (${res.status})`)
+  return res.json()
+}
 
-const themes = await mapLimit(JSON.parse(themesIndex).themes, 8, async ({ path, url }) => {
-  const text = await raw(themesRepo, themesBranch, path)
-  if (text === null) throw new Error(`Could not download ${path} from ${themesRepo}`)
-  const { theme } = JSON.parse(text)
+const { url: themesUrl } = registry.themes
+const { themes: listed } = await hosted(`${themesUrl}/themes.json`)
+if (!listed.length) throw new Error(`${themesUrl}/themes.json lists no themes`)
+
+const themes = await mapLimit(listed, 8, async ({ url }) => {
+  const { theme } = await hosted(url)
   return { id: theme?.id, name: theme?.name, url, colors: theme?.colors?.values }
 })
-if (!themes.length) throw new Error(`${themesRepo} lists no themes`)
 
 await writeFile(themesFile, JSON.stringify(themes, null, 2) + '\n')
-console.log(`  ${themesRepo}@${themesBranch}: ${themes.length} themes`)
+console.log(`  ${themesUrl}: ${themes.length} themes`)

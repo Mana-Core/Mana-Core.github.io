@@ -2,7 +2,7 @@
   "$comment": "Every non-archived Mana-Core repo is listed, except those in 'exclude'. Add an entry under 'repos' to override settings (branch, category, installUrl, sourcesDir, exclude) for one of them.",
   "org": "Mana-Core",
   "exclude": ["Mana-Core.github.io", "Themes"],
-  "themes": { "repo": "Mana-Core/Themes" },
+  "themes": { "url": "https://mana-core.github.io/Themes" },
   "repos": [
     {
       "repo": "Mana-Core/Books",
