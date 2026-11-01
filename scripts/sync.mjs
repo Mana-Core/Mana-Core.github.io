@@ -4,13 +4,16 @@
 // Source metadata is read statically from each repo's TypeScript (the
 // `info: SourceInfo = {...}` object), so nothing from the extension repos is
 // executed. Set GITHUB_TOKEN to avoid the 60 req/h anonymous API limit.
+//
+// Also copies the theme files from the themes repo into docs/public/themes.
 
-import { readFile, writeFile, mkdir } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, rm } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const outFile = resolve(root, 'docs/.vitepress/data/extensions.json')
+const themesDir = resolve(root, 'docs/public/themes')
 const registry = JSON.parse(await readFile(resolve(root, 'registry.json'), 'utf8'))
 
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN
@@ -227,3 +230,27 @@ for (const entry of entries) {
 await mkdir(dirname(outFile), { recursive: true })
 await writeFile(outFile, JSON.stringify({ generatedAt: new Date().toISOString(), org: registry.org, repos }, null, 2) + '\n')
 console.log(`Wrote ${outFile}`)
+
+// --- Themes -----------------------------------------------------------------
+
+// This site serves the theme files, so their URLs outlive any move of the repo. Unlike a
+// repo above, a failure here stops the deploy: going on would publish a site with no
+// themes and take the URLs of every theme down with it.
+const { repo: themesRepo, path: themesPath } = registry.themes
+const { default_branch: themesBranch } = await gh(`repos/${themesRepo}`)
+const themesTree = await gh(`repos/${themesRepo}/git/trees/${themesBranch}?recursive=1`)
+const themeFiles = themesTree.tree
+  .map(t => t.path)
+  .filter(p => p.startsWith(`${themesPath}/`) && p.endsWith('.json'))
+if (!themeFiles.length) throw new Error(`${themesRepo} has no themes in ${themesPath}/`)
+
+const themes = await mapLimit(themeFiles, 8, async (path) => {
+  const text = await raw(themesRepo, themesBranch, path)
+  if (text === null) throw new Error(`Could not download ${path} from ${themesRepo}`)
+  return { name: path.split('/').pop(), text }
+})
+
+await rm(themesDir, { recursive: true, force: true })
+await mkdir(themesDir, { recursive: true })
+await Promise.all(themes.map(({ name, text }) => writeFile(resolve(themesDir, name), text)))
+console.log(`  ${themesRepo}@${themesBranch}: ${themes.length} themes`)
