@@ -5,15 +5,15 @@
 // `info: SourceInfo = {...}` object), so nothing from the extension repos is
 // executed. Set GITHUB_TOKEN to avoid the 60 req/h anonymous API limit.
 //
-// Also copies the theme files from the themes repo into docs/public/themes.
+// Also builds docs/.vitepress/data/themes.json from the themes repo's index.
 
-import { readFile, writeFile, mkdir, rm } from 'node:fs/promises'
+import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { dirname, resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
 const root = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 const outFile = resolve(root, 'docs/.vitepress/data/extensions.json')
-const themesDir = resolve(root, 'docs/public/themes')
+const themesFile = resolve(root, 'docs/.vitepress/data/themes.json')
 const registry = JSON.parse(await readFile(resolve(root, 'registry.json'), 'utf8'))
 
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN
@@ -233,24 +233,21 @@ console.log(`Wrote ${outFile}`)
 
 // --- Themes -----------------------------------------------------------------
 
-// This site serves the theme files, so their URLs outlive any move of the repo. Unlike a
-// repo above, a failure here stops the deploy: going on would publish a site with no
-// themes and take the URLs of every theme down with it.
-const { repo: themesRepo, path: themesPath } = registry.themes
+// The themes repo hosts its own files, so the site only needs their colors for the previews.
+// Unlike a repo above, a failure here stops the deploy: the last good site stays up instead
+// of being replaced by one with an empty Themes page.
+const { repo: themesRepo } = registry.themes
 const { default_branch: themesBranch } = await gh(`repos/${themesRepo}`)
-const themesTree = await gh(`repos/${themesRepo}/git/trees/${themesBranch}?recursive=1`)
-const themeFiles = themesTree.tree
-  .map(t => t.path)
-  .filter(p => p.startsWith(`${themesPath}/`) && p.endsWith('.json'))
-if (!themeFiles.length) throw new Error(`${themesRepo} has no themes in ${themesPath}/`)
+const themesIndex = await raw(themesRepo, themesBranch, 'themes.json')
+if (themesIndex === null) throw new Error(`Could not download themes.json from ${themesRepo}`)
 
-const themes = await mapLimit(themeFiles, 8, async (path) => {
+const themes = await mapLimit(JSON.parse(themesIndex).themes, 8, async ({ path, url }) => {
   const text = await raw(themesRepo, themesBranch, path)
   if (text === null) throw new Error(`Could not download ${path} from ${themesRepo}`)
-  return { name: path.split('/').pop(), text }
+  const { theme } = JSON.parse(text)
+  return { id: theme?.id, name: theme?.name, url, colors: theme?.colors?.values }
 })
+if (!themes.length) throw new Error(`${themesRepo} lists no themes`)
 
-await rm(themesDir, { recursive: true, force: true })
-await mkdir(themesDir, { recursive: true })
-await Promise.all(themes.map(({ name, text }) => writeFile(resolve(themesDir, name), text)))
+await writeFile(themesFile, JSON.stringify(themes, null, 2) + '\n')
 console.log(`  ${themesRepo}@${themesBranch}: ${themes.length} themes`)

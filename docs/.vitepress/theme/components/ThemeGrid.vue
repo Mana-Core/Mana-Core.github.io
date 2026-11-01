@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import ThemeScreen from './ThemeScreen.vue'
-import { addThemeLink, themeFile } from '../data'
+import { addThemeLink } from '../data'
 import { screens } from '../screens'
 import { data as themes } from '../themes.data'
 </script>
@@ -10,7 +10,7 @@ import { data as themes } from '../themes.data'
     <section v-for="theme in themes" :key="theme.id" class="mc-card theme">
       <div class="head">
         <strong class="name">{{ theme.name }}</strong>
-        <a :href="themeFile(theme)" target="_blank" class="file-link">
+        <a :href="theme.url" target="_blank" class="file-link">
           <span class="mc-icon i-code" /> JSON
         </a>
         <a class="mc-btn brand" :href="addThemeLink(theme)" :title="`Add ${theme.name} to Mana`">

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "EB38B0AF-881D-4FEE-83F6-1434CE06FDCC",
+    "name": "Army Green",
+    "url": "https://raw.githubusercontent.com/Mana-Core/Themes/main/themes/army-green.json",
+    "colors": {
+      "accent": "#6B8E23FF",
+      "background": "#1E241BFF",
+      "contentTileOverlay": "#161B14E8",
+      "foregroundOnAccent": "#F2F4E8FF",
+      "label": "#F3F5EDFF",
+      "secondaryBackground": "#2A3325FF",
+      "secondaryLabel": "#AEB8A3FF",
+      "separator": "#DDE5CF26",
+      "separatorSubtle": "#DDE5CF14",
+      "shadow": "#000000FF",
+      "statusDestructive": "#C65A46FF",
+      "statusInfo": "#7FA98BFF",
+      "statusPositive": "#8FBF6BFF",
+      "statusWarning": "#C2A55CFF",
+      "tertiaryBackground": "#394431FF"
+    }
+  },
+  {
+    "id": "6A44B143-9447-43A3-A31A-D2E949CD61DB",
+    "name": "Cyberpunk",
+    "url": "https://raw.githubusercontent.com/Mana-Core/Themes/main/themes/cyberpunk.json",
+    "colors": {
+      "accent": "#FA0FA3FF",
+      "background": "#0A0815FF",
+      "contentTileOverlay": "#0A0815E8",
+      "foregroundOnAccent": "#FFFFFFFF",
+      "label": "#EBFCFFFF",
+      "secondaryBackground": "#110F22FF",
+      "secondaryLabel": "#9EC7F0FF",
+      "separator": "#00E6FF1F",
+      "separatorSubtle": "#00E6FF12",
+      "shadow": "#000000FF",
+      "statusDestructive": "#FF3333FF",
+      "statusInfo": "#00E6FFFF",
+      "statusPositive": "#00FF99FF",
+      "statusWarning": "#FFC857FF",
+      "tertiaryBackground": "#250048FF"
+    }
+  },
+  {
+    "id": "37CB0027-3E42-4D28-B6F6-0041522934D1",
+    "name": "Invincible Blue & Yellow",
+    "url": "https://raw.githubusercontent.com/Mana-Core/Themes/main/themes/invincible-blue-yellow.json",
+    "colors": {
+      "accent": "#F7D046FF",
+      "background": "#0A1633FF",
+      "contentTileOverlay": "#071022E8",
+      "foregroundOnAccent": "#0A1633FF",
+      "label": "#FFFFFFFF",
+      "secondaryBackground": "#122041FF",
+      "secondaryLabel": "#A9B9D8FF",
+      "separator": "#D7E2FF33",
+      "separatorSubtle": "#D7E2FF1F",
+      "shadow": "#000000FF",
+      "statusDestructive": "#D94B3DFF",
+      "statusInfo": "#4CA3FFFF",
+      "statusPositive": "#42C77AFF",
+      "statusWarning": "#F0B63AFF",
+      "tertiaryBackground": "#1B2E5CFF"
+    }
+  }
+]
