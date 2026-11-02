@@ -2,6 +2,10 @@
   {
     "id": "EB38B0AF-881D-4FEE-83F6-1434CE06FDCC",
     "name": "Army Green",
+    "author": {
+      "name": "Karrot",
+      "github": "karrot0"
+    },
     "url": "https://mana-core.github.io/Themes/themes/army-green.json",
     "colors": {
       "accent": "#6B8E23FF",
@@ -22,8 +26,208 @@
     }
   },
   {
+    "id": "E704219B-2C4F-567F-BE66-467D8933CB80",
+    "name": "Aurora",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/aurora.json",
+    "colors": {
+      "accent": "#B98CFFFF",
+      "background": "#0C0F26FF",
+      "contentTileOverlay": "#0C0F26EB",
+      "foregroundOnAccent": "#1C0B33FF",
+      "label": "#F1F4FFFF",
+      "secondaryBackground": "#131838FF",
+      "secondaryLabel": "#7CF5C0FF",
+      "separator": "#7CF5C02E",
+      "separatorSubtle": "#7CF5C017",
+      "shadow": "#000000FF",
+      "statusDestructive": "#EC6480FF",
+      "statusInfo": "#B98CFFFF",
+      "statusPositive": "#73EDB1FF",
+      "statusWarning": "#EDB345FF",
+      "tertiaryBackground": "#1D2A55FF"
+    }
+  },
+  {
+    "id": "2B9F235D-C91A-58B9-A9EF-0FDA9F1246E8",
+    "name": "Blueberry Cheesecake",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/blueberry-cheesecake.json",
+    "colors": {
+      "accent": "#8C9BFFFF",
+      "background": "#171633FF",
+      "contentTileOverlay": "#171633EB",
+      "foregroundOnAccent": "#0E1240FF",
+      "label": "#F4F3FFFF",
+      "secondaryBackground": "#1F1D44FF",
+      "secondaryLabel": "#FFE7B3FF",
+      "separator": "#FFE7B32E",
+      "separatorSubtle": "#FFE7B317",
+      "shadow": "#000000FF",
+      "statusDestructive": "#EE6476FF",
+      "statusInfo": "#8C9BFFFF",
+      "statusPositive": "#73EDB1FF",
+      "statusWarning": "#EDB345FF",
+      "tertiaryBackground": "#2E2B66FF"
+    }
+  },
+  {
+    "id": "6B2D4E8A-1F5C-4A9B-8D3E-7C1A9F2B4D6E",
+    "name": "Catppuccin Frappé (Mauve)",
+    "author": {
+      "name": "Moon"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/catppuccin-frappe.json",
+    "colors": {
+      "accent": "#CA9EE6FF",
+      "background": "#303446FF",
+      "foregroundOnAccent": "#232634FF",
+      "label": "#C6D0F5FF",
+      "secondaryBackground": "#292C3CFF",
+      "secondaryLabel": "#A5ADCEFF",
+      "separator": "#C6D0F52E",
+      "separatorSubtle": "#C6D0F52E",
+      "shadow": "#232634FF",
+      "statusDestructive": "#E78284FF",
+      "statusInfo": "#8CAAEEFF",
+      "statusPositive": "#A6D189FF",
+      "statusWarning": "#E5C890FF",
+      "tertiaryBackground": "#414559FF"
+    }
+  },
+  {
+    "id": "3A6E1F2B-9C47-4D18-B0E5-1A2F3C4D5E6F",
+    "name": "Catppuccin Latte (Mauve)",
+    "author": {
+      "name": "Moon"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/catppuccin-latte.json",
+    "colors": {
+      "accent": "#8839EFFF",
+      "background": "#EFF1F5FF",
+      "foregroundOnAccent": "#DCE0E8FF",
+      "label": "#4C4F69FF",
+      "secondaryBackground": "#E6E9EFFF",
+      "secondaryLabel": "#6C6F85FF",
+      "separator": "#4C4F692E",
+      "separatorSubtle": "#4C4F692E",
+      "shadow": "#DCE0E8FF",
+      "statusDestructive": "#D20F39FF",
+      "statusInfo": "#1E66F5FF",
+      "statusPositive": "#40A02BFF",
+      "statusWarning": "#DF8E1DFF",
+      "tertiaryBackground": "#CCD0DAFF"
+    }
+  },
+  {
+    "id": "9F1C3A7D-4E28-4B96-A5D1-2E8F6C9B3A4D",
+    "name": "Catppuccin Macchiato (Mauve)",
+    "author": {
+      "name": "Moon"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/catppuccin-macchiato.json",
+    "colors": {
+      "accent": "#C6A0F6FF",
+      "background": "#24273AFF",
+      "foregroundOnAccent": "#181926FF",
+      "label": "#CAD3F5FF",
+      "secondaryBackground": "#1E2030FF",
+      "secondaryLabel": "#A5ADCBFF",
+      "separator": "#CAD3F52E",
+      "separatorSubtle": "#CAD3F52E",
+      "shadow": "#181926FF",
+      "statusDestructive": "#ED8796FF",
+      "statusInfo": "#8AADF4FF",
+      "statusPositive": "#A6DA95FF",
+      "statusWarning": "#EED49FFF",
+      "tertiaryBackground": "#363A4FFF"
+    }
+  },
+  {
+    "id": "7F3D9C1A-B482-4E56-A2D7-C8F501E39B6D",
+    "name": "Catppuccin Mocha (Mauve)",
+    "author": {
+      "name": "Moon"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/catppuccin-mocha.json",
+    "colors": {
+      "accent": "#CBA6F7FF",
+      "background": "#1E1E2EFF",
+      "foregroundOnAccent": "#11111BFF",
+      "label": "#CDD6F4FF",
+      "secondaryBackground": "#181825FF",
+      "secondaryLabel": "#A6ADC8FF",
+      "separator": "#CDD6F42E",
+      "separatorSubtle": "#CDD6F42E",
+      "shadow": "#11111BFF",
+      "statusDestructive": "#F38BA8FF",
+      "statusInfo": "#89B4FAFF",
+      "statusPositive": "#A6E3A1FF",
+      "statusWarning": "#F9E2AFFF",
+      "tertiaryBackground": "#313244FF"
+    }
+  },
+  {
+    "id": "41755B09-CDE5-46DE-9199-0A887166DF95",
+    "name": "Chocomint",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/chocomint.json",
+    "colors": {
+      "accent": "#3FD6C5FF",
+      "background": "#261A15FF",
+      "contentTileOverlay": "#261A15EB",
+      "foregroundOnAccent": "#001D19FF",
+      "label": "#F9F4F2FF",
+      "secondaryBackground": "#32241FFF",
+      "secondaryLabel": "#F1DCC0FF",
+      "separator": "#F1DCC02E",
+      "separatorSubtle": "#F1DCC017",
+      "shadow": "#000000FF",
+      "statusDestructive": "#EF6567FF",
+      "statusInfo": "#0DBEADFF",
+      "statusPositive": "#89EB9FFF",
+      "statusWarning": "#EFB146FF",
+      "tertiaryBackground": "#452E24FF"
+    }
+  },
+  {
+    "id": "7C03826C-441B-53F5-B133-5761061C0F09",
+    "name": "Crimson Ink",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/crimson-ink.json",
+    "colors": {
+      "accent": "#FF4D5EFF",
+      "background": "#18181DFF",
+      "contentTileOverlay": "#18181DEB",
+      "foregroundOnAccent": "#2C070AFF",
+      "label": "#F5F5F7FF",
+      "secondaryBackground": "#222228FF",
+      "secondaryLabel": "#C9C4C6FF",
+      "separator": "#C9C4C62E",
+      "separatorSubtle": "#C9C4C617",
+      "shadow": "#000000FF",
+      "statusDestructive": "#EF6661FF",
+      "statusInfo": "#F9B3D2FF",
+      "statusPositive": "#96F8ACFF",
+      "statusWarning": "#F2AF48FF",
+      "tertiaryBackground": "#2E2E3BFF"
+    }
+  },
+  {
     "id": "6A44B143-9447-43A3-A31A-D2E949CD61DB",
     "name": "Cyberpunk",
+    "author": {
+      "name": "Karrot",
+      "github": "karrot0"
+    },
     "url": "https://mana-core.github.io/Themes/themes/cyberpunk.json",
     "colors": {
       "accent": "#FA0FA3FF",
@@ -44,8 +248,112 @@
     }
   },
   {
+    "id": "B53E44A3-F042-4CC4-AA6B-BD9E7F5337C9",
+    "name": "Dreamberry",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/dreamberry.json",
+    "colors": {
+      "accent": "#FF6FB8FF",
+      "background": "#171A5EFF",
+      "contentTileOverlay": "#171A5EEB",
+      "foregroundOnAccent": "#290819FF",
+      "label": "#F0F5FFFF",
+      "secondaryBackground": "#1F2471FF",
+      "secondaryLabel": "#B7C0FFFF",
+      "separator": "#B7C0FF2E",
+      "separatorSubtle": "#B7C0FF17",
+      "shadow": "#000000FF",
+      "statusDestructive": "#F56B76FF",
+      "statusInfo": "#5EE3FFFF",
+      "statusPositive": "#73EDB1FF",
+      "statusWarning": "#EDB345FF",
+      "tertiaryBackground": "#282B92FF"
+    }
+  },
+  {
+    "id": "A8AA1B26-A8CB-586E-9629-9648EB67ED09",
+    "name": "Ectoplasma",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/ectoplasma.json",
+    "colors": {
+      "accent": "#39FF88FF",
+      "background": "#04140FFF",
+      "contentTileOverlay": "#04140FEB",
+      "foregroundOnAccent": "#00210EFF",
+      "label": "#D7FFE9FF",
+      "secondaryBackground": "#082419FF",
+      "secondaryLabel": "#5CFF9DFF",
+      "separator": "#39FF8838",
+      "separatorSubtle": "#39FF881C",
+      "shadow": "#39FF88FF",
+      "statusDestructive": "#EE6476FF",
+      "statusInfo": "#23D97AFF",
+      "statusPositive": "#50FCEAFF",
+      "statusWarning": "#EDB345FF",
+      "tertiaryBackground": "#0C3626FF"
+    }
+  },
+  {
+    "id": "F48A9F2C-8C89-4DEF-9E7F-3B3B9B9532A5",
+    "name": "Fairy Forest",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/fairy-forest.json",
+    "colors": {
+      "accent": "#5CE6C8FF",
+      "background": "#0E1F17FF",
+      "contentTileOverlay": "#0E1F17EB",
+      "foregroundOnAccent": "#05261FFF",
+      "label": "#F1FAF3FF",
+      "secondaryBackground": "#142A20FF",
+      "secondaryLabel": "#FF9F9FFF",
+      "separator": "#FF9F9F2E",
+      "separatorSubtle": "#FF9F9F17",
+      "shadow": "#000000FF",
+      "statusDestructive": "#EF656BFF",
+      "statusInfo": "#FFE1DBFF",
+      "statusPositive": "#9EE78EFF",
+      "statusWarning": "#E0AF3BFF",
+      "tertiaryBackground": "#1F3D2CFF"
+    }
+  },
+  {
+    "id": "B15FC502-5261-5250-8DB7-6319981042EA",
+    "name": "Grape Soda",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/grape-soda.json",
+    "colors": {
+      "accent": "#C6F65AFF",
+      "background": "#1D0E2CFF",
+      "contentTileOverlay": "#1D0E2CEB",
+      "foregroundOnAccent": "#1C2604FF",
+      "label": "#FAF0FFFF",
+      "secondaryBackground": "#27153BFF",
+      "secondaryLabel": "#E7A8FFFF",
+      "separator": "#E7A8FF2E",
+      "separatorSubtle": "#E7A8FF17",
+      "shadow": "#000000FF",
+      "statusDestructive": "#ED647CFF",
+      "statusInfo": "#E7A8FFFF",
+      "statusPositive": "#73EDB1FF",
+      "statusWarning": "#E7B643FF",
+      "tertiaryBackground": "#3A1D5CFF"
+    }
+  },
+  {
     "id": "37CB0027-3E42-4D28-B6F6-0041522934D1",
     "name": "Invincible Blue & Yellow",
+    "author": {
+      "name": "Karrot",
+      "github": "karrot0"
+    },
     "url": "https://mana-core.github.io/Themes/themes/invincible-blue-yellow.json",
     "colors": {
       "accent": "#F7D046FF",
@@ -63,6 +371,256 @@
       "statusPositive": "#42C77AFF",
       "statusWarning": "#F0B63AFF",
       "tertiaryBackground": "#1B2E5CFF"
+    }
+  },
+  {
+    "id": "081A51C4-41FF-460F-987D-F2EF73666EB8",
+    "name": "Manga Ink",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/manga-ink.json",
+    "colors": {
+      "accent": "#F5F5F5FF",
+      "background": "#0B0B0BFF",
+      "contentTileOverlay": "#0B0B0BF0",
+      "foregroundOnAccent": "#151515FF",
+      "label": "#F6F6F6FF",
+      "secondaryBackground": "#292929FF",
+      "secondaryLabel": "#CCCCCCFF",
+      "separator": "#CCCCCC52",
+      "separatorSubtle": "#CCCCCC29",
+      "shadow": "#FFFFFFAA",
+      "statusDestructive": "#FF2222FF",
+      "statusInfo": "#EBEBEBFF",
+      "statusPositive": "#10FF03FF",
+      "statusWarning": "#FEFB41FF",
+      "tertiaryBackground": "#171717FF"
+    }
+  },
+  {
+    "id": "E6CD4238-C48E-5B6F-8F40-8307ACD3F081",
+    "name": "Mulberry Lime",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/mulberry-lime.json",
+    "colors": {
+      "accent": "#D2F25AFF",
+      "background": "#300E2BFF",
+      "contentTileOverlay": "#300E2BEB",
+      "foregroundOnAccent": "#131900FF",
+      "label": "#FEF0FBFF",
+      "secondaryBackground": "#3E1738FF",
+      "secondaryLabel": "#F6AEDBFF",
+      "separator": "#F6AEDB2E",
+      "separatorSubtle": "#F6AEDB17",
+      "shadow": "#000000FF",
+      "statusDestructive": "#EE6476FF",
+      "statusInfo": "#F6AEDBFF",
+      "statusPositive": "#76FBC7FF",
+      "statusWarning": "#F5AE4BFF",
+      "tertiaryBackground": "#521C4AFF"
+    }
+  },
+  {
+    "id": "093C1528-D00A-580E-B3FE-B1ED6101656C",
+    "name": "Navy Coral",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/navy-coral.json",
+    "colors": {
+      "accent": "#F66D67FF",
+      "background": "#112B47FF",
+      "contentTileOverlay": "#112B47EB",
+      "foregroundOnAccent": "#290B0AFF",
+      "label": "#EDF6FFFF",
+      "secondaryBackground": "#1A3756FF",
+      "secondaryLabel": "#B5D4F8FF",
+      "separator": "#EDF6FF24",
+      "separatorSubtle": "#EDF6FF14",
+      "shadow": "#000205FF",
+      "statusDestructive": "#F47A81FF",
+      "statusInfo": "#8EC2FDFF",
+      "statusPositive": "#94EFB5FF",
+      "statusWarning": "#F9B96CFF",
+      "tertiaryBackground": "#23456AFF"
+    }
+  },
+  {
+    "id": "1D03AE05-71DF-4EB3-AB86-731893355218",
+    "name": "Neon Bubblegum",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/neon-bubblegum.json",
+    "colors": {
+      "accent": "#FF4993FF",
+      "background": "#0A0815FF",
+      "contentTileOverlay": "#0F0F0FEB",
+      "foregroundOnAccent": "#FFFFFFFF",
+      "label": "#EBFCFFFF",
+      "secondaryBackground": "#110F22FF",
+      "secondaryLabel": "#93E3FDFF",
+      "separator": "#00E6FF1F",
+      "separatorSubtle": "#00E6FF1F",
+      "shadow": "#000000FF",
+      "statusDestructive": "#FF3333FF",
+      "statusInfo": "#FF4993FF",
+      "statusPositive": "#00FF99FF",
+      "statusWarning": "#93E3FDFF",
+      "tertiaryBackground": "#250048FF"
+    }
+  },
+  {
+    "id": "884F74FA-26E6-4C2D-882C-742997C2645B",
+    "name": "Ocean Blue",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/ocean-blue.json",
+    "colors": {
+      "accent": "#00D0E9FF",
+      "background": "#001626FF",
+      "contentTileOverlay": "#001626EB",
+      "foregroundOnAccent": "#002027FF",
+      "label": "#ECF5FCFF",
+      "secondaryBackground": "#021F33FF",
+      "secondaryLabel": "#93D1E9FF",
+      "separator": "#ECF5FC1F",
+      "separatorSubtle": "#ECF5FC12",
+      "shadow": "#FFFFFFFF",
+      "statusDestructive": "#EF4D60FF",
+      "statusInfo": "#9BBDFFFF",
+      "statusPositive": "#7FF0AAFF",
+      "statusWarning": "#F6A748FF",
+      "tertiaryBackground": "#00304DFF"
+    }
+  },
+  {
+    "id": "03F8FF7F-C258-40E1-AF83-DCEB7477EBDB",
+    "name": "Pumpkin Séance",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/pumpkin-seance.json",
+    "colors": {
+      "accent": "#FF7200FF",
+      "background": "#050405FF",
+      "contentTileOverlay": "#050405F5",
+      "foregroundOnAccent": "#10070AFF",
+      "label": "#FFB16BFF",
+      "secondaryBackground": "#1A0C29FF",
+      "secondaryLabel": "#D4A9FFFF",
+      "separator": "#B674EE70",
+      "separatorSubtle": "#9F56D936",
+      "shadow": "#FFFFFFFF",
+      "statusDestructive": "#FF5269FF",
+      "statusInfo": "#FF6575FF",
+      "statusPositive": "#D4A9FFFF",
+      "statusWarning": "#FFB16BFF",
+      "tertiaryBackground": "#2C143EFF"
+    }
+  },
+  {
+    "id": "C1D07A31-F64D-4094-9CC3-2C77BB5FE757",
+    "name": "Sakura Smoke",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/sakura-smoke.json",
+    "colors": {
+      "accent": "#FFB3C6FF",
+      "background": "#202637FF",
+      "contentTileOverlay": "#202637EB",
+      "foregroundOnAccent": "#230E14FF",
+      "label": "#F2F5FCFF",
+      "secondaryBackground": "#2A3145FF",
+      "secondaryLabel": "#B6C6E6FF",
+      "separator": "#B6C6E62E",
+      "separatorSubtle": "#B6C6E617",
+      "shadow": "#000000FF",
+      "statusDestructive": "#FD7277FF",
+      "statusInfo": "#B6C6E6FF",
+      "statusPositive": "#73EDB1FF",
+      "statusWarning": "#EFB146FF",
+      "tertiaryBackground": "#333D5BFF"
+    }
+  },
+  {
+    "id": "659FBEC3-51D6-588E-859B-A4821D62553A",
+    "name": "Teal Tangerine",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/teal-tangerine.json",
+    "colors": {
+      "accent": "#FF9B45FF",
+      "background": "#0D3238FF",
+      "contentTileOverlay": "#0D3238EB",
+      "foregroundOnAccent": "#290D00FF",
+      "label": "#ECF8FAFF",
+      "secondaryBackground": "#153E45FF",
+      "secondaryLabel": "#9FE8E2FF",
+      "separator": "#9FE8E22E",
+      "separatorSubtle": "#9FE8E217",
+      "shadow": "#000000FF",
+      "statusDestructive": "#FF7882FF",
+      "statusInfo": "#6DCAC3FF",
+      "statusPositive": "#96F8ACFF",
+      "statusWarning": "#EFB146FF",
+      "tertiaryBackground": "#064E58FF"
+    }
+  },
+  {
+    "id": "BC7BF5A1-685D-4EF8-8574-F83C91F63D4B",
+    "name": "Vampire Valentine",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/vampire-valentine.json",
+    "colors": {
+      "accent": "#FA4C85FF",
+      "background": "#09070BFF",
+      "contentTileOverlay": "#09070BF5",
+      "foregroundOnAccent": "#09080DFF",
+      "label": "#FFEAF4FF",
+      "secondaryBackground": "#1F1017FF",
+      "secondaryLabel": "#F09AAEFF",
+      "separator": "#FA4C8542",
+      "separatorSubtle": "#FA4C851C",
+      "shadow": "#F03C7855",
+      "statusDestructive": "#FF95A4FF",
+      "statusInfo": "#D3B9E8FF",
+      "statusPositive": "#B2D8BCFF",
+      "statusWarning": "#E9C78FFF",
+      "tertiaryBackground": "#331723FF"
+    }
+  },
+  {
+    "id": "5ED0F186-F8C8-4B3A-A277-6AF0D5DE1A0D",
+    "name": "Vaporwave",
+    "author": {
+      "name": "viki"
+    },
+    "url": "https://mana-core.github.io/Themes/themes/vaporwave.json",
+    "colors": {
+      "accent": "#FF71CEFF",
+      "background": "#1E1446FF",
+      "contentTileOverlay": "#1E1446EB",
+      "foregroundOnAccent": "#2E0020FF",
+      "label": "#FFF0FAFF",
+      "secondaryBackground": "#2A1C5EFF",
+      "secondaryLabel": "#7DF9FFFF",
+      "separator": "#FF71CE38",
+      "separatorSubtle": "#FF71CE1C",
+      "shadow": "#FF71CEFF",
+      "statusDestructive": "#E6659EFF",
+      "statusInfo": "#FF9CFAFF",
+      "statusPositive": "#51EFCCFF",
+      "statusWarning": "#E3B842FF",
+      "tertiaryBackground": "#0F4A57FF"
     }
   }
 ]

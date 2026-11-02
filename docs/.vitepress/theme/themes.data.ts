@@ -4,12 +4,13 @@ import { defineLoader } from 'vitepress'
 export interface ManaTheme {
   id: string
   name: string
+  author?: { name: string; github?: string }
   url: string
   colors: Record<string, string>
 }
 
 const PREVIEWED = [
-  'accent', 'background', 'contentTileOverlay', 'foregroundOnAccent', 'label', 'secondaryBackground',
+  'accent', 'background', 'foregroundOnAccent', 'label', 'secondaryBackground',
   'secondaryLabel', 'separator', 'statusDestructive', 'statusInfo', 'tertiaryBackground'
 ]
 

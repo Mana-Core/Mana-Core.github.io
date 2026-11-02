@@ -247,8 +247,8 @@ const { themes: listed } = await hosted(`${themesUrl}/themes.json`)
 if (!listed.length) throw new Error(`${themesUrl}/themes.json lists no themes`)
 
 const themes = await mapLimit(listed, 8, async ({ url }) => {
-  const { theme } = await hosted(url)
-  return { id: theme?.id, name: theme?.name, url, colors: theme?.colors?.values }
+  const { author, theme } = await hosted(url)
+  return { id: theme?.id, name: theme?.name, author, url, colors: theme?.colors?.values }
 })
 
 await writeFile(themesFile, JSON.stringify(themes, null, 2) + '\n')

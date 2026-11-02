@@ -9,8 +9,11 @@ defineProps<{ screen: Screen; theme: ManaTheme }>()
 // defined, so a shared id would paint every phone in the first theme.
 const id = useId()
 
+// Some themes leave out contentTileOverlay, which the cover scrims need, so those get their
+// background, slightly see-through.
 function colors(theme: ManaTheme) {
-  const vars = Object.entries(theme.colors).map(([key, value]) => [`--t-${key}`, value])
+  const values = { contentTileOverlay: `${theme.colors.background?.slice(0, 7)}E8`, ...theme.colors }
+  const vars = Object.entries(values).map(([key, value]) => [`--t-${key}`, value])
   return Object.fromEntries([...vars, ['--scrim', `url(#${id}-scrim)`], ['--fade', `url(#${id}-fade)`]])
 }
 </script>

@@ -9,7 +9,14 @@ import { data as themes } from '../themes.data'
   <div class="themes">
     <section v-for="theme in themes" :key="theme.id" class="mc-card theme">
       <div class="head">
-        <strong class="name">{{ theme.name }}</strong>
+        <div class="title">
+          <strong class="name">{{ theme.name }}</strong>
+          <span v-if="theme.author" class="by">
+            by
+            <a v-if="theme.author.github" :href="`https://github.com/${theme.author.github}`" target="_blank">{{ theme.author.name }}</a>
+            <template v-else>{{ theme.author.name }}</template>
+          </span>
+        </div>
         <a :href="theme.url" target="_blank" class="file-link">
           <span class="mc-icon i-code" /> JSON
         </a>
@@ -28,7 +35,11 @@ import { data as themes } from '../themes.data'
 .themes { display: grid; gap: 16px; margin-top: 20px; }
 .theme { padding: 16px; gap: 14px; }
 .head { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; }
-.name { flex: 1; min-width: 160px; font-size: 16px; line-height: 1.3; }
+.title { flex: 1; min-width: 160px; display: flex; flex-direction: column; gap: 2px; }
+.name { font-size: 16px; line-height: 1.3; }
+.by { font-size: 12px; color: var(--vp-c-text-2); }
+.by a { color: inherit; }
+.by a:hover { color: var(--vp-c-brand-1); }
 .file-link {
   display: inline-flex;
   align-items: center;
