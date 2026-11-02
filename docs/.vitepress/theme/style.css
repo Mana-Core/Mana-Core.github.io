@@ -127,7 +127,9 @@ html.nsfw-hidden .is-nsfw { display: none !important; }
 
 @media (min-width: 768px) {
   .VPNavBar .content { display: flex; justify-content: flex-end; }
-  .VPNavBar .content-body {
+  /* has-sidebar is repeated so the pill's background outranks the transparent reset above. */
+  .VPNavBar .content-body,
+  .VPNavBar.has-sidebar .content-body {
     flex-grow: 0 !important;
     align-self: center;
     height: 42px !important;
@@ -135,7 +137,12 @@ html.nsfw-hidden .is-nsfw { display: none !important; }
     gap: 0;
     border: 1px solid var(--vp-c-divider);
     border-radius: 999px;
-    background: color-mix(in srgb, var(--vp-c-bg-alt) 70%, transparent) !important;
+    background: color-mix(in srgb, var(--vp-c-bg-alt) 80%, transparent) !important;
+    /* The pill floats over the page, so without a blur the content scrolling under it reads
+       straight through the icons. */
+    -webkit-backdrop-filter: saturate(180%) blur(16px);
+    backdrop-filter: saturate(180%) blur(16px);
+    box-shadow: 0 4px 16px rgb(0 0 0 / 6%);
   }
   .VPNavBarSearch { flex-grow: 0 !important; padding-left: 0 !important; }
   .VPNavBarAppearance,
